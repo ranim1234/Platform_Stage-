@@ -1,0 +1,129 @@
+
+
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <i class="fa fa-user" aria-hidden="true">
+             <span>   Votre profil    </span>  </i>   </button>
+            </h5>
+          </div>
+      
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                <div class="text">
+                    <div style="width:24px;" >
+                        <div [innerHtml]='msg' *ngIf="msg" style="color: red;"></div>
+                     <div ><img   class="rounded-circle"  [src]="url" *ngIf="url"> </div> 
+                        <label for="imageUpload" class="btn btn-primary " style="width: 180px ;height: 38px ;" >choisir votre photo  </label>
+                          <input type="file"  id="imageUpload" accept="image/*" style="display: none"  (change)="selectFile($event)">
+                        
+                    </div>           
+                 </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <i class="fa fa-pencil" aria-hidden="true">
+                <span>  Détails du compte  </span>          </i>    </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+                <div class="text">
+
+                    <br><br>
+                    <form #formulaire>
+                        <div class="form-row">
+                          <div class="col">
+                              <label id="name">  Name   </label>
+                            <input id="name" type="text" class="form-control" placeholder="First name" name="nom"  [(ngModel)]="selectedUser.nom" >
+                          </div>
+                          <div class="col">
+                            <label id="first name">  User Name    </label>
+        
+                            <input id="first name" type="text" class="form-control" placeholder="Last name" name="username"  [(ngModel)]="selectedUser.username">
+                          </div>
+                        </div>
+                      
+                      <br><br>
+                      
+                        <div class="form-row">
+                          <div class="col">
+                            <label id="email">  Email   </label>
+        
+                            <input id="email" type="text" class="form-control" placeholder="enter email" name="email"  [(ngModel)]="selectedUser.email">
+                          </div>
+                          <div class="col">
+                            <label id="numéro">  Université  </label>
+        
+                            <input id="numéro" type="text" class="form-control" placeholder="votre numéro de télephone" name="nom_faculte"  [(ngModel)]="selectedUser.nom_faculte">
+                          </div>
+                        </div>
+                      
+        
+                      <br><br>
+                      
+                        <div class="form-row">
+                          <div class="col">
+                            <label id="niveau">  Niveau   </label>
+        
+                            <input id="niveau" type="text" class="form-control" placeholder="enter email" name="niveau"  [(ngModel)]="selectedUser.niveau">
+                          </div>
+                          <div class="col">
+                            <label id="numéro">  spécialité </label>
+        
+                            <input id="numéro" type="text" class="form-control" placeholder="votre numéro de télephone" name="specialite"  [(ngModel)]="selectedUser.specialite">
+                          </div>
+                        </div>
+                      
+                     <br><br>
+                      <div class="form-group">
+                        <label for="exampleFormControlTextarea1">  A propos de moi </label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description_competences"  [(ngModel)]="selectedUser.description_competences"></textarea>
+                      </div>
+                      <button id="three" [disabled]="formulaire.invalid"  class=" shadow-lg" style="background-color:rgb(99, 80, 207)" (click)="modifier()"><span style="color: white;font-size: 20px;">enregistrer</span> </button>
+        
+                    </form>
+                </div>            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <i class="fa fa-lock" aria-hidden="true">
+                <span> Mot de passe </span>     </i>       </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+                <div class="text">
+               
+                    <form #formulaire style="display: inline-block;"> 
+                        <div class="form-row">
+                          <div class="col">
+                              <label id="password">     Nouveau mot de passe        </label>
+                            <input type="text" class="form-control" placeholder="your new password" name="password" [(ngModel)]="selectedUser.password">
+                          </div>
+                          <div class="col"> 
+                            <label id="new_password">   confirmer mot de passe        </label>
+    
+                            <input id="new_password" type="text" class="form-control" placeholder="confirm your password" name="confirmPassword" [(ngModel)]="confirmPassword">
+                          </div> 
+                         
+    
+                        </div>  
+                        <br><br>
+                        <button id="four" [disabled]="formulaire.invalid"  class=" shadow-lg" style="background-color:rgb(99, 80, 207)"(click)="modifierPassword()" ><span style="color: white;font-size: 20px;">enregistrer</span> </button>
+    
+                      </form>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    

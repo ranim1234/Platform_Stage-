@@ -1,0 +1,59 @@
+
+   
+img{
+    max-width:180px; 
+    border-radius: 50% ; 
+  }
+  input[type=file]{
+  padding:10px; 
+  background-color: whitesmoke ;
+  box-shadow: 10px 15px 50px  rgb(250, 225, 245); 
+width: 340px ; 
+
+} 
+
+
+button:hover{
+
+color:rgb(219, 160, 240)
+
+
+
+} 
+
+#headingTwo,#headingOne,#headingThree{
+
+height:100px ; 
+
+
+
+} 
+
+
+#headingTwo {
+
+    background: linear-gradient(45deg,rgb(219, 160, 240),rgb(99, 80, 207));
+
+
+}
+
+
+.accordion{
+
+margin-top: 8%; 
+margin-left: 26%;
+
+    width: 720px;
+    box-shadow: 10px 15px 50px 10px rgb(175, 170, 174);
+
+} 
+
+
+
+
+
+
+
+i{
+    font-size: 18px ;
+}

@@ -1,0 +1,136 @@
+.container{
+    margin-top:10%; 
+}
+#one,#two{
+
+width: 260px ; 
+height: 60px ;
+padding-left: 2px ;
+
+background: linear-gradient(45deg,rgb(219, 160, 240),rgb(99, 80, 207));
+border: none ; 
+
+
+}
+
+#dotstwo{
+    grid-gap: 20px;
+    width: 400px; 
+    margin-left: 40%;
+    display: none;
+} 
+#dots{
+    grid-gap: 20px;
+    width: 400px; 
+    margin-left: 40%;  
+    display: none;
+    
+}
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948; /* green */
+  }
+  
+  .ng-invalid:not(form).ng-touched  {
+    border-left: 5px solid #a94442; /* red */
+  }
+  
+  .alert div {
+    background-color: #fed3d3;
+    color: #820000;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+input{
+width:76%; 
+height:40px; 
+padding-left:24px ; 
+border-radius: 4px;
+
+
+} 
+
+ #key{
+    position: absolute ; 
+    top:814px ;  
+    padding-left: 4px;
+    
+    
+} 
+
+#keyone{
+    position: absolute ; 
+    top:860px ;  
+    padding-left: 4px;
+    
+}
+#envelope{
+    position: absolute ; 
+    top:712px ;  
+    padding-left:4px ; 
+} 
+#envelopeone{
+    position: absolute ; 
+    top:760px ;  
+    padding-left:4px ; 
+}
+
+#nomone{
+position: absolute;
+padding-left: 4px ; 
+top:552px ; 
+} 
+ #prénom,#prénomone{
+
+  
+    
+    position: absolute;
+padding-left: 4px ; 
+top:604px ; 
+} 
+#prénomone{
+    position: absolute;
+    padding-left: 4px ; 
+    top:652px;
+
+}
+#three,#thre{
+
+width: 100px ;
+height:40px ;
+margin-bottom: 20px ; 
+border: none;
+}
+
+
+ #university {
+
+    
+    position: absolute;
+padding-left: 2px ; 
+top:918px ; 
+
+}
+
+
+
+
+
+#dots,#dotstwo{
+
+   
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 14px 14px 20px #f7e7f8, -14px -14px 20px rgb(252, 245, 249);
+    width:700px ;
+    margin-left: 30%;
+  }
+  #lock{
+
+ 
+    position: absolute;
+padding-left: 4px ; 
+top:964px ; 
+
+  }
+

@@ -1,0 +1,23 @@
+#div{
+    width: 156px;
+    height:78px;
+    margin-left:20%;
+    margin-top: -8px;
+    background-color: aqua;
+    padding-top:20px;
+    background: linear-gradient(45deg,rgb(219, 160, 240),rgb(99, 80, 207));
+    } 
+ 
+    
+li {
+    padding: 10px;
+} 
+nav{
+    background-color: white;
+    width: 100%px ; 
+   
+}
+i{
+    color:rgb(63, 62, 62)
+}
+

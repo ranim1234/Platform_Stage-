@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    
+
+    <nav id="navbar" class="navbar navbar-expand-xxl  navbar-light " >
+       <a id="div" class="navbar-brand text-center " href="#"><span id="visible" class="text-white font-weight-bold text-center" style="font-size: 24px;"><b>Stagek</b></span> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar-right justify-content-end align-center h5   " id="navbarNav" style="padding-right: 20%;margin-top: 12px;position: sticky;float: right;">
+          <ul  id="navbar-default" class="navbar-nav" style="float: right;">
+            <li class="nav-item active">
+              <a class="nav-link"  (click)="retour()"><i class="fa fa-home " aria-hidden="true"> <span> Home   </span>      </i>
+               </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" (click)="login()"> <i class="fa fa-sign-in " aria-hidden="true">
+
+
+
+
+            <span> Sign in </span>   </i> 
+
+
+                
+                </a>
+            </li>
+         
+            <li class="nav-item">
+              <a class="nav-link "  [routerLink]="['/connexion']"><i class="fa fa-user-plus ">
+                <span>  Register now   </span>    </i>     
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav> 
+      <app-register-now>     </app-register-now>
+    </div>

@@ -1,0 +1,95 @@
+
+<div class="container">
+
+<h1 class="text-center">    Create your account              </h1>
+<div class="text-muted text-center h5">      Already have an account? <a (click)="login()" class="text-primary ">    Sign In      </a>   </div>
+</div> 
+<br><br> 
+<div style="margin-left: 34% ;">   <button  id="one"type="button" class="btn btn-primary btn-lg text-center" (click)="add()">
+    <i class="fa fa-user" aria-hidden="true"></i><span style="padding-left: 8px;">chercheur de stage</span></button>
+    &nbsp;&nbsp; &nbsp;&nbsp;        <button id="two" type="button" class="btn btn-secondary btn-lg text-center" (click)="addtwo()"><i class="fa fa-user-tie"></i><span style="padding-left: 8px;">Recruteur</span></button>                            </div>
+
+    <br><br>
+    <form   id="dots" #formulaire="ngForm" enctype="multipart/form-data"  >
+        <label for="name" class="text-start fw-bold " > Nom Complet</label>
+        <input  required class="form-control shadow-lg " id="name" name="name" type="text" ngModel
+        #name="ngModel"  placeholder="Enter full name" >
+        <div *ngIf="name.invalid && (name.dirty || name.touched)"
+        class="alert">
+        <div *ngIf="name.errors?.required">
+            Name is required 
+          </div> 
+          </div> 
+
+     <label for="username" class="text-start fw-bold "> nom d'utilisateur</label> 
+        <input #username="ngModel" id="username" ngModel  name="username" type="text"  class=" form-control shadow-lg" required   placeholder="enter your user name "             >
+  <div *ngIf="username.invalid && (username.dirty || username.touched)"
+        class="alert">
+        <div *ngIf="username.errors?.required">
+            username is required 
+          </div> 
+          </div> 
+        <label for="email" class="text-start fw-bold "> Email</label>
+        <input #email="ngModel" id="email" name="email" ngModel type="email"  class="form-control shadow-lg"  placeholder="enter your email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"    [email]="true"         >  
+
+        <div *ngIf="email.invalid && (email.dirty || email.touched)"
+        class="alert">
+        <div *ngIf="username.errors?.required">
+            email  is required 
+          </div> 
+          </div> 
+        <label id="password" class="text-start fw-bold "> Password   </label>
+        <input  #password="ngModel" id="password" ngModel class="form-control shadow-lg" name="password" type="password" placeholder="enter your password"   required minlength="5" >
+        <div *ngIf="password.invalid && (password.dirty || password.touched)"
+        class="alert">
+        <div *ngIf="password.errors?.required">
+            password  is required 
+          </div> 
+          <div *ngIf="password.errors?.minlength">
+            password must be at least 5 characters long.
+          </div>
+          </div> 
+        <label for="nom_faculte" class="text-start fw-bold "> Faculté</label>
+        <input  ngModel #nom_faculte="ngModel" id="nom_faculte" name="faculte" type="text"  class="form-control shadow-lg"  placeholder="enter your email"             >  
+        <label for="specialite" class="text-start fw-bold "> Spécialité</label> 
+        <input ngModel #specialite="ngModel" id="specialite" name="specialite" type="text"  class="form-control shadow-lg"   placeholder="enter your email"             >  
+
+        <label for="niveau" class="text-start fw-bold "> Niveau</label>
+        <input ngModel  #niveau="ngModel" id="niveau" name="niveau" type="text"  class="form-control shadow-lg"   placeholder="enter your email"             >  
+
+        <label for="exampleFormControlTextarea1" class="text-start fw-bold">Vos compétences</label>
+        <textarea  ngModel name="competence"  class="form-control" id="exampleFormControlTextarea1" rows="3" #competence="ngModel" required ></textarea> 
+        <div *ngIf="competence.invalid && (competence.dirty || competence.touched)"
+        class="alert">
+        <div *ngIf="competence.errors?.required"> 
+            your skills are required 
+          </div> 
+          </div> 
+        <label for="cv" class="text-start fw-bold ">Votre CV </label>
+        <input type="file"  
+        (change)="onFileSelected($event)"  name="current" class="form-control-file" id="cv"style="margin-left:-20px ; " >
+
+        <button id="three" [disabled]="formulaire.invalid" type="submit" class=" shadow-lg" style="background-color:rgb(99, 80, 207)" (click)="create(name.value,username.value,email.value,password.value,nom_faculte.value,specialite.value,niveau.value,competence.value)"><span style="color: white;font-size: 20px;">Create</span> </button>
+        </form>
+        
+    <br><br>
+    <form id="dotstwo"  #form class="ngForm ">
+        <label for="nom" class="text-start fw-bold "> Nom Complet</label>
+        <input #nom id="nom" name="nom" type="text"  class="form-control shadow-lg" required    placeholder="enter your name "             > 
+
+        <label for="user" class="text-start fw-bold "> nom d'utilisateur</label> 
+        <input #user id="user" name="user" type="text"  class="form-control shadow-lg" required   placeholder="enter your user name "             >  
+
+        <label for="mail" class="text-start fw-bold "> Email</label> 
+        <input #mail id="mail" name="mail" type="email"  class="form-control shadow-lg" required   placeholder="enter your email"             >  
+
+        <label id="pass" class="text-start fw-bold "> Password   </label>
+        <input   #pass id="pass" class="form-control shadow-lg " name="pass" type="password" placeholder="enter your password"   required  > 
+
+        <label for="matricule" class="text-start fw-bold "> Matricule fiscale </label>
+
+        <input #matricule id="matricule" name="matricule" type="text"  class="form-control shadow-lg" required   placeholder="enter your tax registration number "             >  
+
+        <button id="thre" [disabled]="form.invalid"  class=" shadow-lg" style="background-color:rgb(99, 80, 207)" ><span style="color: white;font-size: 20px;">Create</span> </button>
+        </form>
+        

@@ -1,0 +1,234 @@
+<div id="image">
+  <section id="home">
+<div class="container-fluid">
+    
+
+    <nav id="navbar" class="navbar navbar-expand-xxl  navbar-light bg-muted" >
+       <a  id="div" class="navbar-brand text-center"  (click)=goToComponent() ><span id="visible" class="text-white font-weight-bold text-center" style="font-size: 24px;"><b>Stagek</b></span>
+        <span id="hidden" class="text-white font-weight-bold  " style="font-size: 24px;"><b>Let's<br>Start</b> </span>  </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar-right justify-content-end align-center h5   " id="navbarNav" style="padding-right: 20%;margin-top: 12px;position: sticky;float: right;background-color: whitesmoke;">
+          <ul  id="navbar-default" class="navbar-nav" style="float: right;position: fixed;background-color: white;">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home"><i class="fa fa-home" aria-hidden="true"> <span> Home   </span>      </i>
+               </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#statics"> <i class="fas fa-chart-bar"style="color:rgb(46, 45, 45);">
+
+
+
+
+            <span> Statics </span>   </i> 
+
+
+                
+                </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"><i class="fa fa-heart" aria-hidden="true">
+                <span> About </span>  </i>
+                </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#contact"><i class="fa fa-user" aria-hidden="true">
+                <span>  Contact   </span>    </i>     
+              </a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link"  (click)=goToComponent() > 
+                <i class="fa fa-sign-in" aria-hidden="true"> <span>  Log In   </span> </i>
+
+
+
+
+
+                
+                </a>
+            </li>
+          </ul>
+        </div>
+      </nav> 
+    </div>
+    </section>
+      </div>
+
+      <div   style="height: 1400px;background-color:white;margin-bottom: 0%;">
+      
+
+    <br><br><br><br>
+      <section id="statics">
+<br><br> 
+<div id="statiques"> 
+
+  <div class="grid-container">
+
+<div id="one">  <i class="fas fa-user-graduate">  </i> <span style="font-size: 34px;padding-bottom: -400px;"> <b> {{nombres}} subscribers  </b>  </span>
+
+</div>
+
+<div id="two">  <i class="fas fa-user-tie"></i>
+
+</div>
+<div id="three">    <img src="assets/images/220.png"style="width: 100px;height: 100px;">
+
+</div>
+
+
+  </div>
+</div>
+
+
+
+
+      </section>
+      
+      <br><br><br><br> 
+
+      
+      <section id="about"> 
+        <br><br>
+        <h1  class="shadow-m">   <b>About us   </b>               </h1>
+        <br>
+        <div id="aboutus">
+         
+        <article>
+         <span>Stagek is a website that makes finding internships and interns as fluid as ever in Tunisia. Accessible to all, it brings together on a single innovative and efficient media, on the one hand, students and young graduates, and on the other hand, companies and recruitment professionals  </span>
+        
+         <span id="dots">...</span> <span id="more">This multicriteria site has been thought out, designed and presented with the sole aim of optimizing your research whether you are candidates or recruiters. A multitude of tips, tricks, and useful information will allow you to better manage your request.
+          
+          The innovations offered by Stagek undoubtedly lie in its advanced functionalities.
+          
+          Particular attention is paid to supporting Internet users: simplicity, time savings, ease of use, exclusive services, etc.
+          
+          By optimizing their search in Stagek, the candidate can then focus on the quality of their applications, on writing and updating their CV.
+          Stagek offers companies and recruiters high-level services allowing them to better manage the recruitment process and to succeed in their HR strategies.</span></article>
+         <br> <button (click)="myFunction()" id="myBtn">Read more</button>
+
+        </div>
+        
+        
+            
+        </section> 
+      
+
+      <br><br><br><br><br><br><br><br>
+
+
+
+      <section id="contact">
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span style="color: white;">Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f" ></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"style="color: #24d2c8;font:size: 20px;"></i>Stagek 
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Statics</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">About Us</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Contact</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4" style="color:white;">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"style="color: #24d2c8;font-size: 20px;"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"style="color: #24d2c8;font:size: 20px;"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"style="color: #24d2c8;font:size: 20px;"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"style="color: #24d2c8;font:size:20px;"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="color: white ; ">
+    © 2021 Copyright:
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+        
+
+      </section>
+      </div>  

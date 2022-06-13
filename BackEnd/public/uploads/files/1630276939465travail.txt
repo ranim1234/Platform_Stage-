@@ -1,0 +1,3 @@
+formation demain:9h validation:15h 
+réunion après demain 10h : cas d'utilisation globale  
+analyse du marché: analyse de l'existant 
